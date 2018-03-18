@@ -5,10 +5,10 @@
 # Site
 title: 白羊部落
 subtitle: 白羊們的秘密基地
-description:
+description: 你好，我是白羊，很高興認識你，我喜歡寫程式、聽音樂跟吸貓，自由工作者、大一，目前在李梅樹紀念館資訊組擔任 RD；資訊技能點多在網站前後端相關技術，較擅長使用 Node.js 為基底的開發。在這，白羊我會不定期更新一些文章，也許是小故事、詩詞、短文，又或許是技術文、經驗談、甚至是對於時事的個人看法…反正就是各種東西就對惹！種類不限，老少皆宜（？）歡迎來參觀的你，利用底下留言板功能來回饋你的意見給我優！如果要贊助當然也歡迎，畢竟本喵已經要ㄘ土惹OwQ
 author: Aries Cs
 language: zh-TW
-timezone: 
+timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
