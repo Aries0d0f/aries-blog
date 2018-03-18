@@ -19,11 +19,29 @@
 
 .archive-article
   avoid-column-break()
+  .archive-image
+    height: 100pt
+    width: 100%
+    background-size: cover
+    border-radius: 3pt 3pt 0 0
+    
 
 .archive-article-inner
   @extend $block
+  border-radius: 0 0 3pt 3pt
   padding: 10px
   margin-bottom: 15px
+  ul
+    width: 100%
+    font-size: 10pt
+    height: 20pt
+    margin-top: 10pt;
+    a
+      text-decoration: none
+      color: color-grey
+      transition: all .3s
+      &:hover
+        color: color-tone
 
 .archive-article-title
   text-decoration: none
