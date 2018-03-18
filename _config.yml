@@ -4,17 +4,17 @@
 
 # Site
 title: 白羊部落
-subtitle:
+subtitle: 白羊們的秘密基地
 description:
 author: Aries Cs
-language:
-timezone:
+language: zh-TW
+timezone: UTC-8
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://aries0d0f.me
+url: https://blog.aries0d0f.me
 root: /
-permalink: :year/:month/:day/:title/
+permalink: /post/:category/:title/
 permalink_defaults:
 
 # Directory
