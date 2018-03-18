@@ -15,5 +15,10 @@
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0"
+  },
+  "devDependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "hexo-admin": "^2.3.0",
+    "hexo-generator-sitemap": "^1.2.0"
   }
 }

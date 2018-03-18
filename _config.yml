@@ -82,3 +82,13 @@ deploy:
 
 # Disqus
 disqus_shortname: aries-blog
+
+# Admin 
+admin: 
+  username: username 
+  password_hash: password 
+  secret: secret
+
+sitemap:
+    path: sitemap.xml
+    template: ./sitemap_template.xml
