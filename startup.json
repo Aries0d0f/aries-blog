@@ -1,0 +1,7 @@
+{
+  "apps": [{
+    "name": "Aries Blog",
+    "script": "hexo server",
+    "watch": true
+  }]
+}
