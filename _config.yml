@@ -8,7 +8,7 @@ subtitle: 白羊們的秘密基地
 description:
 author: Aries Cs
 language: zh-TW
-timezone: UTC-8
+timezone: TW
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -83,3 +83,6 @@ browsersync:
   logLevel: "warn"
   ghostMode:
     scroll: true
+
+# Disqus
+disqus_shortname: aries-blog
