@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 白羊部落
 subtitle:
 description:
-author: John Doe
+author: Aries Cs
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://aries0d0f.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -78,3 +78,8 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
