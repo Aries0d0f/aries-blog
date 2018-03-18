@@ -26,11 +26,11 @@
   margin: 0 12px 1em
 
 .article-header
-  padding: article-padding article-padding 0
+  padding: article-padding article-padding
 
 .article-title
   text-decoration: none
-  font-size: 2em
+  font-size: article-title-size
   font-weight: bold
   color: color-default
   line-height: line-height-title
@@ -44,21 +44,36 @@
   color: color-default
   padding: 0 article-padding
   p, table
-    line-height: line-height
     margin: line-height 0
+  p
+    line-height: content-line-height
+    text-indent: article-content-size * 2
+    font-size: article-content-size
   h1, h2, h3, h4, h5, h6
     font-weight: bold
   h1, h2, h3, h4, h5, h6
     line-height: line-height-title
     margin: line-height-title 0
+  h3, h4, h5, h6
+    text-indent: 24pt
+  h2
+    &:before
+      content: '#'
+      margin-right: 16pt;
+      color: color-tone
   a
     color: color-link
     text-decoration: none
     &:hover
       text-decoration: underline
   ul, ol, dl
-    margin-top: line-height
-    margin-bottom: line-height
+    margin: 10pt 0;
+    padding: 10pt;
+    padding-left: 20pt;
+    background-color: color-paper
+    li {
+      padding-left: 10pt;
+    }
   img, video
     max-width: 100%
     height: auto
@@ -90,6 +105,9 @@
         &:before
           content: "—"
           padding: 0 0.5em
+  pre,
+  .highlight
+    line-height: 16pt !important
   .pullquote
     text-align: left
     width: 45%
@@ -141,13 +159,14 @@
   font-size: 0.85em
   line-height: line-height
   border-top: 1px solid color-border
+  box-sizing: border-box
   padding-top: line-height
-  margin: 0 article-padding article-padding
+  margin: article-padding article-padding
   a
     color: color-grey
     text-decoration: none
     &:hover
-      color: color-default
+      color: color-tone
 
 .article-tag-list-item
   float: left
