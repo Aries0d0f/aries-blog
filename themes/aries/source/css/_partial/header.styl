@@ -20,8 +20,12 @@
   position: relative
 
 #header-inner
-  position: relative
+  position: fixed
   overflow: hidden
+  z-index: 1000
+  width: calc(100% - 4rem);
+  padding: 0 2rem;
+  background-color: color-nav-dark;
 
 #banner
   position: absolute
@@ -32,6 +36,14 @@
   background: url(banner-url) center #000
   background-size: cover
   z-index: -1
+  &:before
+    content: ''
+    background-color: rgba(#000, .3)
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
 
 #header-title
   text-align: center
@@ -51,13 +63,15 @@ $logo-text
   @extend $logo-text
   font-size: logo-size
   line-height: logo-size
-  letter-spacing: 2px
+  letter-spacing: 2pt
+  font-weight: 500
 
 #subtitle
   @extend $logo-text
   font-size: subtitle-size
   line-height: subtitle-size
-  letter-spacing: 1px
+  letter-spacing: 3pt
+  font-weight: 500
 
 #subtitle-wrap
   margin-top: subtitle-size
@@ -69,14 +83,12 @@ $logo-text
 $nav-link
   float: left
   color: #fff
-  opacity: 0.6
   text-decoration: none
-  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
-  transition: opacity 0.2s
+  transition: all 0.2s
   display: block
   padding: 20px 15px
   &:hover
-    opacity: 1
+    color: color-tone
 
 .nav-icon
   @extend $nav-link
@@ -118,32 +130,28 @@ $nav-link
 #search-form-wrap
   position: absolute
   top: 15px
-  width: 150px
+  width: 200px
+  margin: 0 10pt
   height: 30px
-  right: -150px
+  right: -200px
   opacity: 0
   transition: 0.2s ease-out
   &.on
     opacity: 1
     right: 0
-  @media mq-mobile
-    width: 100%
-    right: -100%
 
 .search-form
   position: absolute
   top: 0
   left: 0
   right: 0
-  background: #fff
   padding: 5px 15px
-  border-radius: 15px
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+  border-bottom: 1pt solid color-tone
 
 .search-form-input
   border: none
   background: none
-  color: color-default
+  color: #fff
   width: 100%
   font: 13px font-sans
   outline: none
@@ -152,9 +160,10 @@ $nav-link
     -webkit-appearance: none
 
 .search-form-submit
+  opacity: 0
   position: absolute
   top: 50%
-  right: 10px
+  right: 15pt
   margin-top: -7px
   font: 13px font-icon
   border: none
